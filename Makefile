@@ -3,6 +3,7 @@
 #	conda install twofish clang -y
 
 -include .env
+
 ifneq ("$(wildcard .env)","")
   export $(shell sed 's/=.*//' .env)
 endif
